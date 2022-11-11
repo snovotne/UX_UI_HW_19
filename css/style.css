@@ -1,0 +1,179 @@
+.inline-block { 
+    display: inline-block;
+    vertical-align: top;
+}
+
+.logo {
+    width: 5%;
+    padding: 1%;
+    text-align: center;
+}
+
+.navigation {
+    background-color: #373738;
+    /* width: 73%; */
+    padding: 1%;
+}
+
+.navigation h3 {
+  color: #fafafa;
+  text-align: left;
+  padding-left: 189px;
+}
+/* CONFIRM THIS SELECTOR - is this how you call out UL within the nav?? */
+.navigation ul {
+    width: 50%;
+    margin-left: auto;
+}
+
+.heroImg {
+    height: 100px;
+    padding: 10px;
+}
+
+.content {
+    width: 500px;
+    margin: 0 auto;
+}
+
+/* experimental sidenav */
+
+.sidenav img {
+  margin-left: .4%;
+  width: 84px;
+  padding-bottom: 100px;
+  padding-left: 40px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 10px;
+    left: .4%;
+    background-color: #373738;
+    overflow-x: hidden;
+    padding-top: 40px;
+    vertical-align: left;
+  }
+  
+  .sidenav a {
+    padding: 9px 9px 9px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+  }
+
+
+/*  end experimental sidenav */
+
+.content p {
+  color: rgb(48, 48, 48);
+  text-align: left;
+  padding-left: -200px;
+  font-size: 25px;
+}
+
+
+h1 {
+  color: rgb(48, 48, 48);
+  text-align: left;
+  padding-left: 315px;
+  font-size: 50px;
+  
+}
+
+.flexContainer {
+  display: flex;
+  padding-left: 300px;
+  flex-direction: row;
+}
+
+.flexContainer div {
+  width: 33%;
+  margin: 10px;
+  padding: 10px;
+}
+
+.myWork h1 {
+  color: rgb(48, 48, 48);
+  text-align: left;
+  padding-left: 315px;
+  font-size: 50px;
+}
+
+
+.workGrid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 200px 200px;
+  grid-gap: 10px;
+  background-color: #fafafa;
+  padding: 10px;
+}
+
+
+.grid-container > div {
+  background-color: rgba(244, 244, 244, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+
+footer { 
+  background-color: #373738;
+  padding: 5px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* NEED TO FIGURE OUT PADDING */
+}
+
+footer ul {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 1500px;
+    list-style: none;
+}
+
+footer li {
+    padding: 25px;
+    color: #818181;
+    text-align: center;
+    display: inline-block;
+}
+
+footer li:hover {
+    color: #f1f1f1;
+  }
+
+
+
+
+
+
+
+   /*  for side nav */
+  @media screen and (max-height: 600px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+/*   mobile media query */
+@media only screen and  (max-width: 600) {
+/*   grid-template-columns: auto auto auto auto;
+  grid-template-rows: 200px; */
+}
+
